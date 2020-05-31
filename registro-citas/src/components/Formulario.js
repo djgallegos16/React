@@ -1,5 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import uuid from 'uuid/v4'; //crear id automatico
+import PropTypes from 'prop-types';
 
 const Formulario = ({crearCita}) => {
 
@@ -16,9 +17,9 @@ const Formulario = ({crearCita}) => {
 
    // funcion que detecta el cambio en el imput
    const handleChange = e => {
-      console.log(e.target.name) // obtiene la propiedad name del iut
+      // console.log(e.target.name) // obtiene la propiedad name del iut
       actualizarCita({
-         ... cita, // copia para mantener todos los datos llenados en el formulario
+         ...cita,// copia para mantener todos los datos llenados en el formulario
          [e.target.name]: e.target.value 
       })
    }
@@ -109,6 +110,11 @@ const Formulario = ({crearCita}) => {
          </form>
       </Fragment>
    );
+}
+
+// docummentar el componente
+Formulario.propTypes = {
+   crearCita: PropTypes.func.isRequired
 }
  
 export default Formulario;
