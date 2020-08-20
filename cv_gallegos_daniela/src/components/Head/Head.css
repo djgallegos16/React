@@ -1,0 +1,46 @@
+.cabecera{
+    color: #ffff !important;
+    padding: 25px;
+    height: 'auto';
+    border-left: solid 15px #575757;
+    background-color: #0ab3a3 !important; 
+    width: 100%;
+}
+.imagen{
+    position: absolute;
+    right: 0;
+    padding: 25px;
+    border-radius: 35px 0 0 35px;
+}
+.textGray{
+    color: #575151;
+    margin-left: 10px;
+}
+.textRow{
+    display: flex;
+}
+h1, h4, p{
+    padding: 0;
+    margin: 0;
+}
+.iconMargin{    
+    font-size: 1rem !important;
+    color: #575151;
+    margin: 0.2rem;
+}
+.containIcon{
+    width: auto !important;
+    margin: 0 10px 0 0 !important;
+    padding: 0 !important;
+    background: #fff;
+    display: flex !important;
+}
+.topMargin{
+    margin-top: 5px;
+}
+.topBorderRound{
+    border-radius: 10px 10px 0 0;
+}
+.bottomBorderRound{
+    border-radius: 0 0 10px 10px;
+}
